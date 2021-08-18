@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Technology
 {
-    public class Computer
+    public class Computer : AbstractEntity
     {
         // TODO : Add 3 fields, 2 methods, one constructor
         public int StorageInGB { get; set; }
