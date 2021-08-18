@@ -24,5 +24,10 @@ namespace Technology
             ServiceActivated = false;
         }
 
+        public bool GetServiceStatus()
+        {
+            return ServiceActivated;
+        }
+
     }
 }
