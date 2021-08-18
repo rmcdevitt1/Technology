@@ -6,7 +6,7 @@ namespace Technology
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello There!");
+            Console.WriteLine("Hello World!");
         }
     }
 }
