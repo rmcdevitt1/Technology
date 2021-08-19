@@ -7,6 +7,7 @@ namespace Technology
         public int StorageInGB { get; set; }
         public int MemoryInMB { get; set; }
         public string Processor { get; set; }
+        private int objectId;
 
         public Computer(int storageInGB, int memoryInMB, string processor)
         {
@@ -23,6 +24,13 @@ namespace Technology
         public void UpgradeStorage(int storageInGB)
         {
             StorageInGB += storageInGB;
+        }
+
+
+        public override int GetObjectId()
+        {
+            AbstractEntity.objectIDnumber += 1;
+            return AbstractEntity.objectIDnumber;
         }
     }
 }
